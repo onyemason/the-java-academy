@@ -130,6 +130,7 @@ public class UserServiceimpl implements UserService {
                     .responseMessage(AccountUtils.ACCOUNT_NOT_EXIST_MESSAGE)
                     .build();
         }
+        // user service fix
 
         User foundUser = userRepository.findByAccountNumber(request.getAccountNumber());
         return BankResponse.builder()
